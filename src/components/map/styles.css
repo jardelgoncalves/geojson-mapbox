@@ -1,0 +1,53 @@
+.mapboxgl-ctrl-geocoder,
+.mapboxgl-ctrl-geocoder .suggestions {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  @apply rounded-sm;
+}
+
+.mapboxgl-ctrl-geocoder--icon {
+  @apply fill-neutral-950;
+}
+
+.coords {
+  @apply relative;
+}
+.coords::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #000;
+}
+
+.coords .coord {
+  @apply relative ml-8 text-xs flex;
+}
+
+.coords .coord:first-child {
+  @apply ml-0;
+}
+
+.coords .coord:last-child {
+  @apply ml-0;
+}
+
+.coord::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -18px;
+  width: 40px;
+  height: 1px;
+  margin: auto 0;
+  border-top: 1px dashed #000;
+}
+
+.coord:first-child::after,
+.coord:last-child::after {
+  left: 12px;
+  width: 12px;
+}
