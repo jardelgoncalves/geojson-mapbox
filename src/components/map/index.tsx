@@ -80,7 +80,7 @@ const Map = () => {
         localGeocoder: coordinatesGeocoder as any,
         zoom: 4,
         placeholder: "Pesquisar...",
-        mapboxgl: mapboxgl,
+        mapboxgl: mapboxgl as any,
         reverseGeocode: true,
       })
     );
